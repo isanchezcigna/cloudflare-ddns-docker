@@ -1,4 +1,4 @@
-[Spanish]:
+> Spanish
 # Cloudflare DDNS Docker
 Este Docker realiza la verificación de la IP pública y la actualiza en los subdominios especificados en Cloudflare.
 
@@ -8,17 +8,17 @@ Este Docker realiza la verificación de la IP pública y la actualiza en los sub
 1. Obtener la Global API Key desde Cloudflare.
 2. Obtener el ID de zona desde el dashboard del dominio en Cloudflare.
 
-### Construcción
+## Construcción
 Para construir la imagen Docker, ejecuta el siguiente comando:
 
 ```docker build -t cloudflare-ddns .```
 
-### Ejecución
+## Ejecución
 Para ejecutar el contenedor, ejecuta el siguiente comando:
 
 ```docker run -d --name cloudflare-ddns cloudflare-ddns```
 
-[English]:
+> English
 # Cloudflare DDNS Docker
 This Docker verifies the public IP and updates it in the subdomains specified in Cloudflare.
 
@@ -28,12 +28,12 @@ This Docker verifies the public IP and updates it in the subdomains specified in
 1. Get the Global API Key from Cloudflare.
 2. Get the zone ID from the domain dashboard in Cloudflare.
 
-### Build
+## Build
 To build the Docker image, run the following command:
 
 ```docker build -t cloudflare-ddns .```
 
-### Run
+## Run
 To run the container, run the following command:
 
 ```docker run -d --name cloudflare-ddns cloudflare-ddns```
