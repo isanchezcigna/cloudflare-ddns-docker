@@ -1,16 +1,39 @@
-# Se debe solicitar primero API de Cloudflare:
+[Spanish]:
+# Cloudflare DDNS Docker
+Este Docker realiza la verificación de la IP pública y la actualiza en los subdominios especificados en Cloudflare.
 
-1. Crear un token de API en Cloudflare:
-2. Accede a My Profile → API Tokens.
-3. Pulsa el botón Create Token.
-4. Selecciona la plantilla Edit Zone DNS pulsando el botón Use template.
-5. Agrega el permiso Zone > Zone > Read.
-6. Selecciona la zona específica que incluirás: Zone > Specific zone > midominio.com.
-7. Pulsa el botón Continue to summary y luego Create Token.
-8. Guarda el token generado en un lugar seguro, ya que solo se muestra una vez
+## Requisitos previos
 
-# Para construir:
-docker build -t cloudflare-ddns .
+### Obtener API de Cloudflare
+1. Obtener la Global API Key desde Cloudflare.
+2. Obtener el ID de zona desde el dashboard del dominio en Cloudflare.
 
-# Para ejecutar:
-docker run -d --name cloudflare-ddns cloudflare-ddns
+### Construcción
+Para construir la imagen Docker, ejecuta el siguiente comando:
+
+```docker build -t cloudflare-ddns .```
+
+### Ejecución
+Para ejecutar el contenedor, ejecuta el siguiente comando:
+
+```docker run -d --name cloudflare-ddns cloudflare-ddns```
+
+[English]:
+# Cloudflare DDNS Docker
+This Docker verifies the public IP and updates it in the subdomains specified in Cloudflare.
+
+## Prerequisites
+
+### Get Cloudflare API
+1. Get the Global API Key from Cloudflare.
+2. Get the zone ID from the domain dashboard in Cloudflare.
+
+### Build
+To build the Docker image, run the following command:
+
+```docker build -t cloudflare-ddns .```
+
+### Run
+To run the container, run the following command:
+
+```docker run -d --name cloudflare-ddns cloudflare-ddns```
