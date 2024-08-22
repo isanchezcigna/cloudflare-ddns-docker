@@ -1,0 +1,9 @@
+services:
+  cloudflare-ddns:
+    build: .
+    container_name: cloudflare-ddns
+    restart: always
+    volumes:
+      - ./config.json:/usr/local/bin/config.json
+    environment:
+      - TZ=America/Santiago # for timezone logs purposes

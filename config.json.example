@@ -1,0 +1,30 @@
+{
+  "cron_interval": "*/5 * * * *",
+  "max_checks": 12,
+  "targets": [
+    {
+      "domain": "domain.com",
+      "zone_id": "zoneidcloudflare1",
+      "global_api_key": "globalapikeycloudflare1",
+      "email": "email1@domain.com",
+      "ttl": "auto",
+      "subdomains": [
+        "subdomain1",
+        "subdomain2",
+        "subdomain3"
+      ]
+    },
+    {
+      "domain": "domain2.com",
+      "zone_id": "zoneidcloudflare2",
+      "global_api_key": "globalapikeycloudflare2",
+      "email": "email2@domain2.com",
+      "ttl": "3600",
+      "subdomains": [
+        "subdomain1",
+        "subdomain2",
+        "subdomain3"
+      ]
+    }
+  ]
+}
