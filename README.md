@@ -1,7 +1,27 @@
 # Cloudflare DDNS Docker
 
-> English
-# Cloudflare DDNS Docker
+## Table of Contents
+
+- [English](#english-doc)
+  - [Prerequisites](#prerequisites)
+    - [Get Cloudflare API](#get-cloudflare-api)
+  - [Configuration](#configuration)
+  - [Build](#build)
+  - [Run](#run)
+  - [Using Docker Compose](#using-docker-compose)
+
+- [Español](#spanish-doc)
+  - [Requisitos previos](#requisitos-previos)
+    - [Obtener API de Cloudflare](#obtener-api-de-cloudflare)
+  - [Configuración](#configuración)
+  - [Construcción](#construcción)
+  - [Ejecución](#ejecución)
+  - [Usando Docker Compose](#usando-docker-compose)
+
+---
+
+# English Doc
+
 This Docker checks the public IP and updates it in the specified subdomains in Cloudflare for multiple accounts and multiple domains.
 
 ## Prerequisites
@@ -73,7 +93,7 @@ To view the container logs, run:
 
 ---
 
-> Spanish
+# Spanish Doc
 
 Este Docker verifica la IP pública y la actualiza en los subdominios especificados en Cloudflare para múltiples cuentas y múltiples dominios.
 
